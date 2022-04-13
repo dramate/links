@@ -1,0 +1,43 @@
+@use '../abstracts' as *;
+
+.logo-svg {
+    max-width: 95%;
+    height: auto;
+}
+
+#dramate-logo {
+
+    #dramate {
+        fill: $white-main;
+    }
+
+    #slogan {
+        #a-drama {
+            fill: $teal-main;
+        }
+
+        #students {
+            fill: $yellow-main;
+        }
+        
+        #best-friend {
+            fill: $green-main;
+        }
+    }
+
+    #r-mask {
+        fill: $red-main;
+    }
+
+    #r-mask-m {
+        fill: $white-main;
+    }
+
+    #l-mask {
+        fill: $black-main;
+    }
+
+    #l-mask-d {
+        fill: $white-main;
+    }
+}

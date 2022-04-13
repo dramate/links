@@ -1,0 +1,15 @@
+@use '../abstracts' as *;
+
+.copyright {
+    color: $white-main;
+    
+    a {
+        color: $white-main;
+        text-decoration: none;
+        transition: .2s ease;
+
+        &:hover {
+            color: $green-main;
+        }
+    }
+}

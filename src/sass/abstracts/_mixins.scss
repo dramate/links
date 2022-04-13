@@ -1,0 +1,11 @@
+@mixin button-effects($colour) {
+    background-color: $colour;
+
+    &:hover {
+        background-color: darken($colour, 8%);
+    }
+
+    &:active {
+        background-color: darken($colour, 16%);
+    }
+}

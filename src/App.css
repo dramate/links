@@ -1,38 +1,245 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.links-container .main-links a button, .links-container .social-links a button {
+  font-size: 30px;
+  padding: 18px;
+  border: none;
+  border-radius: 10px;
+  margin: 5px 10px;
+  transition: 0.2s ease;
+}
+.links-container .main-links a button:hover, .links-container .social-links a button:hover {
+  cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.links-container, .links-container .main-links, .links-container .social-links, .links-container .social-links a button, .App {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+body {
+  background-color: #50494b;
+  margin: 0px;
+  padding: 0px;
+}
+
+.App {
+  text-align: center;
+  flex-flow: column nowrap;
+  padding: 32px 0px 0px 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: "Open Sans", Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", "Helvetica", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 700;
+}
+
+.logo-text {
+  font-family: "Raleway", "Helvetica", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  text-transform: lowercase;
+}
+.logo-text > span {
+  font-weight: 900;
+}
+
+@media (max-width: 270px) {
+  .main-links a button {
+    font-size: 20px;
+  }
+}
+.logo-svg {
+  max-width: 95%;
+  height: auto;
+}
+
+#dramate-logo #dramate {
+  fill: white;
+}
+#dramate-logo #slogan #a-drama {
+  fill: #15ac9d;
+}
+#dramate-logo #slogan #students {
+  fill: #f0bd56;
+}
+#dramate-logo #slogan #best-friend {
+  fill: #b7d58b;
+}
+#dramate-logo #r-mask {
+  fill: #e64d6e;
+}
+#dramate-logo #r-mask-m {
+  fill: white;
+}
+#dramate-logo #l-mask {
+  fill: #282426;
+}
+#dramate-logo #l-mask-d {
+  fill: white;
+}
+
+.links-container {
+  width: 90%;
+  max-width: 400px;
+  flex-flow: column nowrap;
+  padding: 0px;
+  margin: 0px auto;
+}
+.links-container .main-links {
+  flex-flow: column wrap;
+  width: 100%;
+}
+.links-container .main-links a {
+  width: 100%;
+  text-decoration: none;
+}
+.links-container .main-links a button {
+  width: 98%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 25px 20%;
+  font-family: "Open Sans", "Arial", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+}
+.links-container .main-links a button.first-button {
+  background-color: #15ac9d;
+}
+.links-container .main-links a button.first-button:hover {
+  background-color: #11887c;
+}
+.links-container .main-links a button.first-button:active {
+  background-color: #0c645b;
+}
+.links-container .main-links a button.second-button {
+  background-color: #e64d6e;
+}
+.links-container .main-links a button.second-button:hover {
+  background-color: #e02951;
+}
+.links-container .main-links a button.second-button:active {
+  background-color: #c41c41;
+}
+.links-container .main-links a button.third-button {
+  background-color: #b7d58b;
+}
+.links-container .main-links a button.third-button:hover {
+  background-color: #a5ca6d;
+}
+.links-container .main-links a button.third-button:active {
+  background-color: #92bf4f;
+}
+.links-container .main-links a button.fourth-button {
+  background-color: #f39681;
+}
+.links-container .main-links a button.fourth-button:hover {
+  background-color: #f0775c;
+}
+.links-container .main-links a button.fourth-button:active {
+  background-color: #ec5836;
+}
+.links-container .main-links a button.fifth-button {
+  background-color: #2dbad2;
+}
+.links-container .main-links a button.fifth-button:hover {
+  background-color: #259cb1;
+}
+.links-container .main-links a button.fifth-button:active {
+  background-color: #1e7e8f;
+}
+.links-container .main-links a button.sixth-button {
+  background-color: #f0bd56;
+}
+.links-container .main-links a button.sixth-button:hover {
+  background-color: #edae31;
+}
+.links-container .main-links a button.sixth-button:active {
+  background-color: #e19d14;
+}
+.links-container .social-links {
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin: 10px auto;
+}
+.links-container .social-links a {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+}
+.links-container .social-links a button {
+  width: 100%;
+  height: 100%;
+  font-size: 40px;
+  padding: 5px;
+  color: #fff;
+}
+.links-container .social-links a button.instagram-button {
+  background-color: #fcb045;
+}
+.links-container .social-links a button.instagram-button:hover {
+  background-color: #fc9f1d;
+}
+.links-container .social-links a button.instagram-button:active {
+  background-color: #ec8b04;
+}
+.links-container .social-links a button.youtube-button {
+  background-color: red;
+}
+.links-container .social-links a button.youtube-button:hover {
+  background-color: #d60000;
+}
+.links-container .social-links a button.youtube-button:active {
+  background-color: #ad0000;
+}
+.links-container .social-links a button.twitter-button {
+  background-color: #1ca0f2;
+}
+.links-container .social-links a button.twitter-button:hover {
+  background-color: #0d8bd9;
+}
+.links-container .social-links a button.twitter-button:active {
+  background-color: #0a72b2;
+}
+.links-container .social-links a button.facebook-button {
+  background-color: #1876f2;
+}
+.links-container .social-links a button.facebook-button:hover {
+  background-color: #0c63d4;
+}
+.links-container .social-links a button.facebook-button:active {
+  background-color: #0a51ae;
+}
+.links-container .social-links a button.pinterest-button {
+  background-color: #e60022;
+}
+.links-container .social-links a button.pinterest-button:hover {
+  background-color: #bd001c;
+}
+.links-container .social-links a button.pinterest-button:active {
+  background-color: #940016;
+}
+
+.copyright {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.copyright a {
+  color: white;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+.copyright a:hover {
+  color: #b7d58b;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*# sourceMappingURL=App.css.map */
